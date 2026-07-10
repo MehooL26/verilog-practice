@@ -14,3 +14,4 @@ then only the block will be triggered.
 2. LOGICAL : && -> Logical AND, || -> Logical OR, ! -> Logical NOT -- gives True or False as output
 3. RELATIONAL : <, >, <=, >=, ==, ===, !=, !==
 4. BITWISE : ~, &, |, ^, ~^
+5. REDUCTION : &, ~&, |, ~|, ^, ~^
