@@ -2,11 +2,11 @@ module bitwise_operators;
   reg [3:0] a;
   reg [3:0] b;
 
-  reg [3:0] bnot;
-  reg [3:0] band;
-  reg [3:0] bor;
-  reg [3:0] bxor;
-  reg [3:0] bxnor;
+  reg [3:0] bnot; //~
+  reg [3:0] band; //&
+  reg [3:0] bor;  //|
+  reg [3:0] bxor; //^
+  reg [3:0] bxnor;//~^
 
   initial
     begin
