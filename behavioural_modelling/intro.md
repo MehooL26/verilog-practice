@@ -15,3 +15,4 @@ then only the block will be triggered.
 3. RELATIONAL : <, >, <=, >=, ==, ===, !=, !==
 4. BITWISE : ~, &, |, ^, ~^
 5. REDUCTION : &, ~&, |, ~|, ^, ~^
+6. SHIFT : >>, <<, >>>, <<<
