@@ -2,15 +2,15 @@ module relational_operators;
   reg [3:0] a;
   reg [3:0] b;
 
-  reg gt;
-  reg lt;
-  reg gtoeq;
-  reg ltoeq;
+  reg gt; //>
+  reg lt; //<
+  reg gtoeq;  //>=
+  reg ltoeq;  //<=
 
-  reg eq;
-  reg neq;
-  reg ceq;
-  reg cneq;
+  reg eq;  //==
+  reg neq; //!=
+  reg ceq; //===
+  reg cneq;//!==
 
   initial
     begin
