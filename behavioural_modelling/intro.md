@@ -1,3 +1,4 @@
+## BEHAVIOURAL MODELLING
 - it basically lets us write the logic instead of defining each gate that needs to be used.
 
 - we use always-begin words and the block keeps running forever, so we add a sensitivity list. So when there is a change in the sensitivity list
