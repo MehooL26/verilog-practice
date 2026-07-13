@@ -17,3 +17,10 @@ always
     #2;
     b = 1;
   end
+
+//Intra assignment delay
+always 
+  begin
+    a = #1 0;
+    b = #2 1;
+  end
