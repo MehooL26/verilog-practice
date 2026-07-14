@@ -1,5 +1,6 @@
 // $monitor will run whenever there is any change in value of argument, whereas $display runs only once.
 // $monitor is executed in the postponed region, whereas $display is executed in active region
+// $strobe is similar to $display but it gets executed in postponed region.
 module example;
   reg a;
   initial
