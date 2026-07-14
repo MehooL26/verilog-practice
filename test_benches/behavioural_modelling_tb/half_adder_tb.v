@@ -2,7 +2,7 @@ module testbenches;
   reg a_tb, b_tb;
   wire sum_tb, carry_tb;
 
-  half_adder dut (a_tb, b_tb, sum_tb, carry_tb);
+  HA dut (a_tb, b_tb, sum_tb, carry_tb);
 
   initial
     begin
