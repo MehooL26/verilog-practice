@@ -1,3 +1,5 @@
+// we are designing mux using if-else so we will get a priority based schematic
+// using case statements we will get a different schematic, so it is necessary to decide what to use
 module mux_4_1(
   input [1:0] select, [3:0] i, 
   output reg y
