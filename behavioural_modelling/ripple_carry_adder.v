@@ -5,9 +5,9 @@ module ripple_carry_adder(
   output carry
 );
   wire w1, w2, w3;
-  full_adder fa1(a[0], b[0], c_in, sum[0], w1);
-  full_adder fa2(a[1], b[1], w1, sum[1], w2);
-  full_adder fa3(a[2], b[2], w2, sum[2], w3);
-  full_adder fa4(a[3], b[3], w3, sum[3], carry);
+  FA fa1(a[0], b[0], c_in, sum[0], w1);
+  FA fa2(a[1], b[1], w1, sum[1], w2);
+  FA fa3(a[2], b[2], w2, sum[2], w3);
+  FA fa4(a[3], b[3], w3, sum[3], carry);
   
 endmodule
