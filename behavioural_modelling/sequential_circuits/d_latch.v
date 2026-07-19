@@ -1,5 +1,5 @@
 module d_latch(
-  input enb, d_in, 
+  input enb, rst, d_in, 
   output reg q, qbar
 );
 
