@@ -1,6 +1,6 @@
 module sipo;
   reg clk,rst,enb,s_in;
-  wire p_out;
+  wire [3:0] p_out;
 
   sipo dut(clk,rst,enb,s_in,p_out);
 
