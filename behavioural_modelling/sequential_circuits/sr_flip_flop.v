@@ -1,4 +1,5 @@
-// FLIP FLOP WORKS ON EDGE OF CLOCK WHEREAS LATCH WOKRS ON LEVEL OF ENABLE SIGNAL
+// FLIP FLOP WORKS ON EDGE OF CLOCK WHEREAS LATCH WORKS ON LEVEL OF ENABLE SIGNAL
+// so all flip flops will have similar code to latch, just posedge word will be used.
 module sr_flip_flop(
   input enb, rst, s, r,
   output reg q, qbar
