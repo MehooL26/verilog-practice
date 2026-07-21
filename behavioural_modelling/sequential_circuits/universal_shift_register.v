@@ -46,7 +46,4 @@ module usr(
       
   assign s_out = temp[0];
   assign p_out = (shift==0 && load==0) ? temp : 'bx;
-  assign 
-  
-        
-    
+endmodule
