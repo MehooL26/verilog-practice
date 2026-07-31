@@ -1,0 +1,23 @@
+module mod_4_counter_tb;
+  reg clk,reset,enb;
+  wire [1:0] count;
+
+  mod_4_counter dut(clk,rst,enb,count);
+
+  initial
+    begin
+      {clk,reset,enb} = 0;
+    end
+
+  always #5 clk = ~clk;
+  
+  initial
+    begin
+      reset = 1;
+      #10;
+      reset = 0;
+      enb = 1;
+      #10;
+      enb = 0;
+    end
+endmodule
