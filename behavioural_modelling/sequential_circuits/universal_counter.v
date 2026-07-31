@@ -13,7 +13,7 @@ module universal_counter(
     begin
       if(rst) 
         internal_counter <= 0;
-      else
+      else if(enb)
         internal_counter <= internal_counter + 1'b1;
     end
 
