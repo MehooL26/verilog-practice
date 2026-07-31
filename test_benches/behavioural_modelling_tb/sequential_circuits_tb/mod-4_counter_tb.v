@@ -2,7 +2,7 @@ module mod_4_counter_tb;
   reg clk,reset,enb;
   wire [1:0] count;
 
-  mod_4_counter dut(clk,rst,enb,count);
+  mod_4_counter dut(clk,reset,enb,count);
 
   initial
     begin
