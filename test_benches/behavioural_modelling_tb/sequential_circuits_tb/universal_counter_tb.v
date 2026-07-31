@@ -14,4 +14,16 @@ module universal_counter_tb;
     end
 
   always #5 clk = ~clk;
+
+  initial
+    begin
+      reset = 1;
+      #10;
+      reset = 0;
+      #10;
+      enb = 1;
+      mode = 2'b00;
+      #100;
+      enb = 0;
+    end
 endmodule
