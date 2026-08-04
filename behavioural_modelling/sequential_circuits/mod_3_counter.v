@@ -7,9 +7,11 @@ module mod_3_counter(
     begin
       if(reset)
         count <= 1'b0;
-      else if(count<3 && enb==1)
+      else if(count>2 && enb==1)
         count <= count + 1'b1;
       else if(count == 3 && enb==1)
         count <= 1'b0;
+      else if (enb==0)
+        count <= count;
     end
 endmodule
