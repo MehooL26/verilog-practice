@@ -21,4 +21,22 @@ module f_3_with_50dt(
           
     end
 
+  always @ (posedge clk)
+    begin
+      if(count == 0)
+        enb1 <= 1'b1;
+      else
+        enb1 <= 1'b0;
+    end
+
+  always @ (negedge clk)
+    begin
+      if(counter == 0)
+        enb2 <= 1'b1;
+      else
+        enb2 <= 1'b0;
+    end
+
+  assign f_3_50dt = enb1 | enb2;
+
 endmodule
